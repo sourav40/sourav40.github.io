@@ -8,3 +8,40 @@
  #profile {
     border-radius: 50%;
   }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.65fr 0.50fr 0.25fr;
+    padding: 10px;
+    color: white;
+}
+
+.inner-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 80px;
+    margin-left: 100px;
+    font-size: 18px;
+    color: white;
+}
+
+.content {
+    color: gray;
+    margin-left: 15px;
+}
+
+.aboutUs {
+    color: gray;
+}
+
+.tweetWrap {
+    display: flex;
+    margin-bottom: 25px;
+}
