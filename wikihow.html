@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header {
+            height: 80px;
+            background-color: #93B874;
+            position: sticky;
+        }
+
+        #searchInput {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            width: 300px;
+            margin-bottom: 15px;
+        }
+
+        #flexLogo {
+            display: flex;
+            text-align: center;
+            margin-left: 200px;
+            gap: 30px;
+        }
+
+        #flexHeader {
+            display: flex;
+            margin-left: auto;
+            gap: 30px;
+            font-size: 15px;
+            margin-top: 25px;
+            margin-right: 200px;
+        }
+
+        #introduction {
+            background-color: #E6EEE0;
+            height: 370px;
+            display: flex;
+            gap: 100px;
+        }
+
+        .intro {
+            font-size: 35px;
+            line-height: normal;
+            margin-bottom: 25px;
+            font-weight: bold;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+
+        .question {
+            margin-left: 200px;
+            font-size: 23px;
+        }
+
+        .description {
+            margin-top: 60px;
+        }
+
+        .book {
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        input[type=text] {
+            width: 70%;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('/Profile/images/search-icon.jpeg');
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            margin-left: 200px;
+            border: 2px solid #93B874;
+            border-radius: 10px;
+        }
+
+        .mainP {
+            font-weight: bold;
+            margin-left: 200px;
+            font-size: 22px;
+        }
+
+        .nav {
+            margin-top: -15px;
+        }
+
+        #content {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        #content2 {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        .feeds {
+            height: 200px;
+            width: 150px;
+            border: 1px solid black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        #mainContent {
+            height: 800px;
+        }
+
+        #footer {
+            height: 300px;
+            background-color: #93B874;
+        }
+
+        #footerLogo {
+            margin-left: 200px;
+        }
+
+        #footerFlex {
+            display: flex;
+           
+        }
+
+        #proButton {
+            color: white;
+            border: 1px solid orange;
+            background-color: orange;
+            height: 20px;
+            width: 50px;
+            border-radius: 10px;
+            margin-top: 25px;
+            margin-left: 200px;
+        }
+
+        #contact{
+           display: grid; 
+           grid-template-columns: auto auto; 
+           column-gap: 20px; 
+           color: white;
+           font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="flexLogo">
+            <div> <img src="images/wikihowlogo.png" width="150px" /></div>
+            <input id="searchInput" placeholder="to do anything..." />
+
+            <a href><img style="margin-top: 12px;" src="images/search.png" alt="searchButton" width="100px"
+                    height="60px" /></a>
+
+            <label id="proButton">PRO</label>
+
+            <div id="flexHeader">
+                <label class="nav"><img src="images/helpus.png" width="30px" height="30px" /><br />
+                    HELP US</label>
+                <label class="nav"><img src="images/explore.png" width="30px" height="30px" /><br />
+                    EXPLORE</label>
+                <label class="nav"><img src="images/login.png" width="30px" height="30px" /><br />
+                    LOG IN</label>
+                <label class="nav"><img src="images/random.png" width="30px" height="30px" /><br />
+                    RANDOM</label>
+            </div>
+        </div>
+    </div>
+
+    <div id="introduction">
+
+        <div class="description">
+
+            <label class="intro">Welcome to wikiHow, the</label><br />
+            <label class="intro">most trusted how-to site</label><br />
+            <label class="intro">on the internet</label><br />
+
+            <p class="question">What will you learn on wikiHow today?</p>
+            <p><input type="text" name="search" placeholder="Search..">
+            </p>
+
+        </div>
+
+        <div class="book">
+            <img src="images/book.webp" width="400px" height="350px" />
+        </div>
+    </div>
+
+    <div id="mainContent">
+
+        <p class="mainP">Expert Co-Authored Articles</p>
+
+        <div id="content">
+
+            <div class="feeds">
+                <img src="images/one.jpeg" width="150px" height="50%" ; /><br />
+                <label>How To Feel More Attractive</label>
+
+            </div>
+
+            <div class="feeds">
+                <img src="images/two.jpeg" width="150px" height="50%" ; /><br />
+                <label>Ranking the Loyalty of Astrological Signs</label>
+            </div>
+
+            <div class="feeds">
+                <img src="images/three.jpeg" width="150px" height="50%" ; /><br />
+                <label>How to Create Family Unity</label>
+            </div>
+
+            <div class="feeds">
+                <img src="images/four.jpeg" width="150px" height="50%" ; /><br />
+                <label>How to Keep Inflatable Pool Water Clean</label>
+            </div>
+
+            <div class="feeds">
+                <img src="images/five.jpeg" width="150px" height="50%" ; /><br />
+                <label>How to Compost in an Apartment</label>
+            </div>
+
+            <div class="feeds">
+                <img src="images/six.jpeg" width="150px" height="50%" ; /><br />
+                <label>How to Take Beach Photos</label>
+            </div>
+
+        </div>
+
+        <p class="mainP">Trending How-To Articles</p>
+
+
+        <div id="content2">
+
+            <div class="feeds">
+                <img src="images/three.jpeg" width="150px" height="50%" ; /><br />
+                <label>How To Feel More Attractive</label>
+
+            </div>
+
+            <div class="feeds">
+                <img src="images/five.jpeg" width="150px" height="50%" ; /><br />
+                <label>Ranking the Loyalty of Astrological Signs</label>
+            </div>
+
+            <div class="feeds">
+                <img src="images/six.jpeg" width="150px" height="50%" ; /><br />
+                <label>How to Create Family Unity</label>
+            </div>
+
+            <div class="feeds">
+                <img src="images/one.jpeg" width="150px" height="50%" ; /><br />
+                <label>How to Keep Inflatable Pool Water Clean</label>
+            </div>
+
+            <div class="feeds">
+                <img src="images/four.jpeg" width="150px" height="50%" ; /><br />
+                <label>How to Compost in an Apartment</label>
+            </div>
+
+            <div class="feeds">
+                <img src="images/two.jpeg" width="150px" height="50%" ; /><br />
+                <label>How to Take Beach Photos</label>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div id="footer">
+
+        <div id="footerLogo"> <img src="images/wikihowlogo.png" width="150px" /></div>
+        <hr style="width: 80%;" />
+
+        <div id="footerFlex">
+
+            <div>
+                <input style="width: 42%;" type="text" name="search" placeholder="Search how to...">
+                <img style="margin-left: 155px; margin-top: 40px;" src="images/socialmedia.png" width="390px"
+                    height="85px" />
+            </div>
+
+            <div id="contact">
+                <label>Home</label>
+                <label>Site Map</label>
+                <label>About</label>
+                <label>Terms of Use</label>
+                <label>Experts</label>
+                <label>Privacy Policy</label>
+                <label>Jobs</label>
+                <label>Contribute</label>
+                <label>Contact Us</label>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
